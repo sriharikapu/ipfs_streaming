@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/images/favicon.png" />
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>IPFSTube</title>
 
@@ -27,8 +28,8 @@
   <div class="">
     <div class="row custom-head" >
       <div class="col-xs-12 col-sm-8 col-sm-push-2">
-        <img class="header-logo" src="/images/header-logo.png" />
-        <h1 class="header-content text-left">BlockTube</h1>
+        <img href="#" class="header-logo" src="/images/header-logo.png" />
+        <h1 href="#" class="header-content text-left">BlockTube</h1>
         <img id="myBtn" class="header-upload" src="/images/upload.png" ></img>
         <div id="myModal" class="modal">
           <!-- Modal content -->
@@ -51,6 +52,10 @@
     </div>
 
     <div class="row">
+      <div class="col-md-12" style="position: inherit; text-align: center;">
+      <h3>Videos</h3>
+      <p>Supports Youtube, Vimeo, and direct links. (Also works with <a href="#" class="text-trigger" id="audio_example" data-caption="Nordgroove - Happy Step">audio files</a>.)</p>
+      </div>
       <!-- <div class="col-md-6">
         <form action="fileupload" method="post" enctype="multipart/form-data">
           <input type="file" name="filetoupload"><br>
@@ -63,12 +68,24 @@
         </form>
       </div> -->
 
+      <!-- <div class="row">
+        <video id="video" src=""></video>
+      </div> -->
       <div class="side-right">
         <div id="playlistsRow" class="row">
           <!-- PLAYLISTS LOAD HERE -->
         </div>
 
+        <div id="video_container" class="container">
 
+    <!-- <div class="flex">
+       <div class="vid htmlvid" style="background-image:url(img/vid_towers.jpg)" vidSrc="videos/towers.mp4"></div>
+      <div class="vid youtube" style="background-image:url(https://i.ytimg.com/vi/tU1b1H2EWU4/mqdefault.jpg)" ytSrc="tU1b1H2EWU4"></div>
+      <div class="vid youtube" style="background-image:url(https://i.vimeocdn.com/video/540194840_350x200.jpg)" ytSrc="rTi9FKuMNKQ"></div>
+      <div class="vid youtube" style="background-image:url(https://i.ytimg.com/vi/z_PeaHVcohg/mqdefault.jpg)" ytSrc="z_PeaHVcohg"></div>
+      <div class="vid vimeo" style="background-image:url(https://i.vimeocdn.com/video/506473859_350x200.jpg)" vimeoSrc="119287310"></div>
+      <div class="vid vimeo" style="background-image:url(https://i.vimeocdn.com/video/554831823_350x200.jpg)" vimeoSrc="154174852"></div>
+    </div> -->
         <html>
 
           <div id="playlistsTemplate" style="display: none;" class="row">
@@ -93,7 +110,8 @@
   <script src="js/web3.min.js"></script>
   <script src="js/truffle-contract.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/popbox.js"></script>
+   <script src="js/popbox.js"></script>
+  <script src="js/BigPicture.js"></script>
 </body>
 
 </html>

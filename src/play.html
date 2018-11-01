@@ -5,24 +5,55 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon.png" />
   <title>Video Streaming</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/Bloody.css" rel="stylesheet">
 </head>
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
+
 <body>
-  <div class="container">
+  <div class="">
+    <div class="row custom-head" >
+      <div class="col-xs-12 col-sm-8 col-sm-push-2">
+        <img href="#" class="header-logo" src="/images/header-logo.png" />
+        <h1 href="#" class="header-content text-left">BlockTube</h1>
+        <img id="myBtn" class="header-upload" src="/images/upload.png" ></img>
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+            <div class="modal-content">
+            <span class="close cross">&times;</span>
+            <form action="fileupload" method="post" enctype="multipart/form-data">
+              <input class="label-top" type="file" name="filetoupload"><br>
+              <input class="upload_submit" type="submit">
+              <img
+                src="http://www.mytreedb.com/uploads/mytreedb/loader/ajax_loader_gray_512.gif"
+                id="loader"
+                class="loader"
+                style="visibility: hidden;"/>
+            </form>
+
+            </div>
+        </div>
+
+      </div>
+    </div>
     <div class="row">
-        <h1>Awesome streamed video where all segments are stored on IPFS</h1>
-        <hr/>
+        <!-- <h1>Awesome streamed video where all segments are stored on IPFS</h1> -->
+        <!-- <hr/> -->
         <br/>
     </div>
-    <div class="row">
-      <video id="video"></video>
+    <div class="col-md-12 video-player">
+      <video controls id="video"></video>
     </div>
+
+
     <br>
     <br>
+
+     <script src="https://cdn.rawgit.com/video-dev/hls.js/18bb552/dist/hls.min.js"></script>
     <!--<div class="row">
       <label style="font-size:25px;"> Like this video? Pay for it to live on the network a bit longer </label><br>
       <button class="btn btn-lg btn-default btn-pay btn-danger" style="padding: 25px 100px; font-size: 30px;" type="button">Pay</button>
@@ -39,4 +70,6 @@
 <script src="js/web3.min.js"></script>
 <script src="js/truffle-contract.js"></script>
 <script src="js/play.js"></script>
+<script src="js/popbox.js"></script>
+<script src="js/BigPicture.js"></script>
 </body>

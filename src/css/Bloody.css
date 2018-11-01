@@ -309,3 +309,10 @@
   margin-top: 2%;
   margin-right: 20%;
 }
+.container {
+	margin: 20px auto;
+	width: 600px;
+}
+.video-player {
+	height: 80%;
+}
